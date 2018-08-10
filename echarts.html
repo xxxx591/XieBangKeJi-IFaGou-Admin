@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<link rel="stylesheet" href="./layui/css/layui.css">
+<link rel="stylesheet" href="./css/style.css">
+
+<body>
+    <header>
+        <div class="header">
+            <div class="head-right">
+               
+            </div>
+        </div>
+    </header>
+
+    <div class="content-box">
+        <div class="layui-tab layui-tab-card">
+            <ul class="layui-tab-title">
+                <li class="layui-this">
+                    <a href="/">echarts</a>
+                </li>
+            </ul>
+            <div class="layui-tab-content layui-form echarts-box">
+                <div class="layui-tab-item layui-show">
+                   <div class="main" id="test01">
+                       
+                   </div>
+                   
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+<script src="./js/jquery.min.js"></script>
+<script src="/layui/layui.js"></script>
+<script src="./echarts/echarts.js"></script>
+<script>
+    //Demo
+    layui.use('form', function () {
+        var form = layui.form;
+
+    });
+    var docHeight = $(document).innerHeight();
+    $('.content-box').css('min-height', docHeight - 230)
+    $('.content-box .layui-tab-content').css('min-height', docHeight - 400)
+
+    {
+        let myEcharts = echarts.init(document.querySelector('#test01'));
+        let option = {
+            title: {
+                text: 'ECharts 入门示例'
+            },
+            tooltip: {},
+            legend: {
+                data:['销量']
+            },
+            xAxis: {
+                data: ["衬衫","羊毛衫","雪纺衫","裤子","高跟鞋","袜子"]
+            },
+            yAxis: {},
+            series: [{
+                name: '销量',
+                type: 'bar',
+                data: [5, 20, 36, 10, 10, 20]
+            }]
+        };
+        // 数据注入
+        // myEcharts.setOption(option)
+
+    }
+
+</script>
+
+</html>

@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<link rel="stylesheet" href="./../layui/css/layui.css">
+<link rel="stylesheet" href="./../css/style.css">
+
+<body>
+    <header>
+        <div class="header">
+            <div class="head-right">
+                <a href="/" class="logo">
+                    <img src="./../images/logo.png" title="">
+                </a>
+                <ul class="head-ul head-right-ul">
+                    <li>
+                        <a href="/">素材推荐</a>
+                    </li>
+                    <li>
+                        <a href="./paper_submit.html">AI伪原创</a>
+                    </li>
+                    <li>
+                        <a href="../similarity/simi_submit.html">相似检测</a>
+                    </li>
+                    <li class="head-ul-li">
+                        <a href="./user-info.html">账号管理</a>
+                    </li>
+                    <li>
+                        <a href="../paycenter/user-info.html">充值中心</a>
+                    </li>
+                    <li>
+                        <a href="../popu/popu-index.html">推广赚分</a>
+                    </li>
+                    <li>
+                        <a href="../free/index.html">免费活动</a>
+                    </li>
+                    <li>
+                        <a href="/">SEO工具</a>
+                    </li>
+                </ul>
+                <span class="head-right-s ">
+                    <img src="./../images/tx.jpg" alt="" style="cursor: pointer;">
+                </span>
+            </div>
+        </div>
+    </header>
+
+    <div class="content-box">
+        <div class="layui-tab layui-tab-card">
+            <ul class="layui-tab-title">
+                <li class="layui-this">
+                    <a href="./user-info.html">基本信息</a>
+                </li>
+                <li>
+                    <a href="./user-consume.html">消费记录</a>
+                </li>
+                <li>
+                    <a href="./user-recharge.html">充值记录</a>
+                </li>
+                <li>
+                    <a href="./user-child.html">子账号</a>
+                </li>
+            </ul>
+            <div class="layui-tab-content layui-form czsc-form">
+                <div class="layui-form-item m-l-15">
+                    <p>账号ID：
+                        <span>16232</span>
+                    </p>
+                </div>
+                <div class="layui-form-item m-l-15">
+                    <p>用户名：
+                        <span>谢沅航</span>
+                    </p>
+                </div>
+                <div class="layui-form-item m-l-15">
+                    <p>注册时间：
+                        <span>2018年8月7日15:25:22</span>
+                    </p>
+                </div>
+                <div class="layui-form-item m-l-15">
+                    <p>上级管理：
+                        <span>1008</span>
+                    </p>
+                </div>
+                <div class="layui-form-item m-l-15">
+                    <p>当前服务：
+                        <span>基础版</span>
+                    </p>
+                </div>
+                <div class="layui-form-item m-l-15">
+                    <p>我的积分：
+                        <span>100</span>分</p>
+                </div>
+                <div class="layui-form-item m-l-15">
+                    <p style="margin-bottom: 15px;">绑定微信：
+                        <a href="#">miraclove</a>
+                        <a href="#">｜</a>
+                        <a href="#">解除绑定</a>
+                    </p>
+                    <span>
+                        <img src="../images/ewm404.jpg" alt="">
+                    </span>
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer class="foot">
+        <div class="foots">
+            <div class="footer">
+                <div class="footer-top">
+                    <a href="#">返回首页</a>
+                    <span>|</span>
+                    <a href="#">常见问题</a>
+                    <span>|</span>
+                    <a href="#">操作流程</a>
+                    <span>|</span>
+                    <a href="#">网站公告</a>
+                </div>
+                <div class="footer-bt">
+                    Copyright @ 2002-2016 湖南写邦科技有限公司
+                    <a href="#" target="_blank">湘ICP备16012700号-1</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+</body>
+
+<script src="./../js/jquery.min.js"></script>
+<script src="./../layui/layui.all.js"></script>
+<script>
+    //Demo
+    layui.use('form', function () {
+        var form = layui.form;
+        var layer = layui.layer;
+        var laydate = layui.laydate;
+
+
+    });
+    var docHeight = $(document).innerHeight();
+    $('.content-box').css('min-height', docHeight - 230)
+    $('.content-box .layui-tab-content').css('min-height', docHeight - 400)
+    $('.ckk-edit').click(function (e) {
+        $('.ckk-add,.ckk-add-ipt').toggle();
+    });
+</script>
+
+</html>

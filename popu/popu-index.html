@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<link rel="stylesheet" href="./../layui/css/layui.css">
+<link rel="stylesheet" href="./../css/style.css">
+
+<body>
+    <header>
+        <div class="header">
+            <div class="head-right">
+                <a href="/" class="logo">
+                    <img src="./../images/logo.png" title="">
+                </a>
+                <ul class="head-ul head-right-ul">
+                    <li>
+                        <a href="/">素材推荐</a>
+                    </li>
+                    <li>
+                        <a href="./paper_submit.html">AI伪原创</a>
+                    </li>
+                    <li>
+                        <a href="../similarity/simi_submit.html">相似检测</a>
+                    </li>
+                    <li>
+                        <a href="./user-info.html">账号管理</a>
+                    </li>
+                    <li>
+                        <a href="../paycenter/user-info.html">充值中心</a>
+                    </li>
+                    <li class="head-ul-li">
+                        <a href="./popu-index.html">推广赚分</a>
+                    </li>
+                    <li>
+                        <a href="../free/index.html">免费活动</a>
+                    </li>
+                    <li>
+                        <a href="/">SEO工具</a>
+                    </li>
+                </ul>
+                <span class="head-right-s ">
+                    <img src="./../images/tx.jpg" alt="" style="cursor: pointer;">
+                </span>
+            </div>
+        </div>
+    </header>
+
+    <div class="content-box">
+        <div class="layui-tab layui-tab-card">
+            <ul class="layui-tab-title">
+                <li class="layui-this">
+                    <a href="./popu-index.html">推广说明</a>
+                </li>
+                <li>
+                    <a href="./popu-second.html">下级用户</a>
+                </li>
+
+            </ul>
+            <div class="layui-tab-content layui-form popu-box">
+                <div class="layui-form-item m-l-15">
+                    <h2>您的推广链接为：</h2>
+                    <div class="layui-input-inline">
+                        <input type="text" class="layui-input" value="http://www.paperfree.cn/f/1p9y0" disabled>
+                    </div>
+                </div>
+                <div class="layui-form-item m-l-15">
+                    <h2>如何申请为推广员？</h2>
+                    <p>1.如果您在本站注册帐号的时间大于5天即可成为推广员。</p>
+                </div>
+                <div class="layui-form-item m-l-15">
+                    <h2>如何发展下级会员？</h2>
+                    <p>1.通过论坛、贴吧(例如您学校的论坛贴吧)、QQ或是您的网站等，发布您的“推广链接”，用户点击您的“推广链接”进入本站，注册后，此用户即成为您的下级会员。</p>
+                    <p>2.推广员可获得下级会员充值金额的20%的佣金，佣金满100元即可提现。佣金也可以用来购买ifagou的字数。</p>
+                </div>
+
+
+            </div>
+        </div>
+    </div>
+    <footer class="foot">
+        <div class="foots">
+            <div class="footer">
+                <div class="footer-top">
+                    <a href="#">返回首页</a>
+                    <span>|</span>
+                    <a href="#">常见问题</a>
+                    <span>|</span>
+                    <a href="#">操作流程</a>
+                    <span>|</span>
+                    <a href="#">网站公告</a>
+                </div>
+                <div class="footer-bt">
+                    Copyright @ 2002-2016 湖南写邦科技有限公司
+                    <a href="#" target="_blank">湘ICP备16012700号-1</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+</body>
+
+<script src="./../js/jquery.min.js"></script>
+<script src="./../layui/layui.all.js"></script>
+<script>
+    //Demo
+    layui.use('form', function () {
+        var form = layui.form;
+        var layer = layui.layer;
+        var laydate = layui.laydate;
+
+
+    });
+    var docHeight = $(document).innerHeight();
+    $('.content-box').css('min-height', docHeight - 230)
+    $('.content-box .layui-tab-content').css('min-height', docHeight - 400)
+    $('.ckk-edit').click(function (e) {
+        $('.ckk-add,.ckk-add-ipt').toggle();
+    });
+</script>
+
+</html>
