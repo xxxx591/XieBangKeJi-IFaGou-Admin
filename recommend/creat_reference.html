@@ -78,6 +78,17 @@
                         </div>
                     </div>
                     <div class="layui-form-item">
+                        <p class="ckk-xj-p">标签类别：</p>
+                        <button class="layui-btn layui-bg-gray layui-btn-sm xjckk-btn">全部
+                        </button>
+                        <button class="layui-btn layui-bg-gray layui-btn-sm xjckk-btn">全部
+                        </button>
+                        <button class="layui-btn layui-bg-gray layui-btn-sm xjckk-btn">全部
+                        </button>
+                        <button class="layui-btn layui-bg-gray layui-btn-sm xjckk-btn">全部
+                        </button>
+                        <button class="layui-btn layui-bg-gray layui-btn-sm xjckk-btn">全部
+                        </button>
                         <button class="layui-btn layui-bg-gray layui-btn-sm xjckk-btn">全部
                         </button>
 
@@ -173,6 +184,9 @@
     $('.content-box .layui-tab-content').css('min-height', docHeight - 400)
     $('.ckk-edit').click(function (e) {
         $('.ckk-add,.ckk-add-ipt').toggle();
+    });
+    $('.xjckk-btn').click(function (e) { 
+        $(this).toggleClass('layui-bg-gray').siblings('.xjckk-btn').removeClass('layui-bg-gray')
     });
 </script>
 
