@@ -2,7 +2,7 @@
 /* CSS Document */
 * { margin: 0; padding: 0; }
 
-body { font-size: 12px; font-family: SimSun, Arial; position: relative; background: url(../images/banner.jpg); }
+body { font-size: 12px; font-family: SimSun, Arial; position: relative; background: url(../images/2.jpg) s; }
 
 img { border: none; }
 
@@ -32,8 +32,13 @@ header .header .head-ul li:hover a { color: #108938; text-decoration: none; }
 header .header .head-ul .head-ul-li { border-bottom: 3px solid #108938; height: 76px; }
 header .header .head-ul .head-ul-li a { color: #108938; }
 header .header .head-right-ul { text-align: center; float: left; }
-header .head-right-s { float: right; line-height: 80px; height: 80px; }
+header .head-right-s { float: right; line-height: 80px; height: 80px; position: relative; }
 header .head-right-s a { font-size: 16px; color: #108938; margin-left: 30px; }
+header .head-right-s .head-right-s-content { line-height: 30px; position: absolute; background: #fff; z-index: 999999; min-width: 160px; left: -85px; box-sizing: border-box; padding: 10px; top: 80px; border-radius: 5px; text-overflow: ellipsis; white-space: nowrap; }
+header .head-right-s .head-right-s-content::after { width: 0; height: 0; border-width: 0 10px 15px; border-style: solid; border-color: transparent transparent #fff; margin: 40px auto; position: absolute; top: -55px; left: 50%; margin-left: -10px; border-radius: 2px; content: ''; }
+header .head-right-s .head-right-s-content ul li { font-size: 14px; }
+header .head-right-s .head-right-s-content ul li:last-of-type { text-align: center; }
+header .head-right-s .head-right-s-content ul li:last-of-type a { margin-left: 0; }
 header .head-right-s:hover { text-decoration: none; }
 
 .m-l-5 { margin-left: 5px; }

@@ -12,7 +12,7 @@ body {
   font-size: 12px;
   font-family: SimSun, Arial;
   position: relative;
-  background: url(../images/banner.jpg);
+  background: url(../images/2.jpg)s;
 }
 
 img {
@@ -116,10 +116,50 @@ header {
     float: right;
     line-height: 80px;
     height: 80px;
+    position: relative;
     a {
       font-size: 16px;
       color: #108938;
       margin-left: 30px;
+    }
+    .head-right-s-content {
+      line-height: 30px;
+      position: absolute;
+      background: #fff;
+      z-index: 999999;
+      min-width: 160px;
+      left: -85px;
+      box-sizing: border-box;
+      padding: 10px;
+      top: 80px;
+      border-radius: 5px;
+      text-overflow: ellipsis;
+      white-space: nowrap;
+      &::after {
+        width: 0;
+        height: 0;
+        border-width: 0 10px 15px;
+        border-style: solid;
+        border-color: transparent transparent #fff;
+        margin: 40px auto;
+        position: absolute;
+        top: -55px;
+        left: 50%;
+        margin-left: -10px;
+        border-radius: 2px;
+        content: '';
+      }
+      ul {
+        li {
+          font-size: 14px;
+          &:last-of-type {
+            text-align: center;
+            a{
+            margin-left: 0;
+            }
+          }
+        }
+      }
     }
     &:hover {
       text-decoration: none;
@@ -297,17 +337,17 @@ footer {
         text-align: left;
         padding: 9px 0 9px 15px;
       }
-      .ckk-check-index{
-        h4{
+      .ckk-check-index {
+        h4 {
           margin-bottom: 15px;
         }
-        ul{
+        ul {
           display: flex;
           justify-content: left;
           flex-wrap: wrap;
-          li{
+          li {
             box-sizing: border-box;
-            border:1px solid #333;
+            border: 1px solid #333;
             padding: 5px 10px;
             margin-right: 15px;
           }
@@ -372,7 +412,7 @@ footer {
           }
         }
       }
-      .ckk-xj-p{
+      .ckk-xj-p {
         padding: 9px 0 9px 15px;
       }
     } // 提交软文页面
@@ -529,64 +569,64 @@ footer {
 }
 
 // 查看详情页
-.header-box{
+.header-box {
   background: #fff;
-  h3{
+  h3 {
     padding-top: 10px;
     font-size: 26px;
     font-weight: 600;
     text-align: center;
     margin-bottom: 10px;
   }
-  h4{
+  h4 {
     font-size: 20px;
     font-weight: 600;
     text-align: center;
     padding-bottom: 20px;
   }
 }
+
 .check-details-box {
   width: 1600px;
   margin: 20px auto;
   background: #fff;
   font-family: Microsoft Yahei, Arial;
- 
-  .tip-box{
+  .tip-box {
     padding-bottom: 20px;
     border-bottom: 1px solid $backColor;
     padding-top: 10px;
-        p{
-          float: left;
-          padding: 10px 15px;
-        }
-    h3{
+    p {
+      float: left;
+      padding: 10px 15px;
+    }
+    h3 {
       font-size: 14px;
       margin: 15px 20px;
     }
-    ul{
+    ul {
       display: flex;
       justify-content: left;
       flex-wrap: wrap;
-      li{
+      li {
         margin-left: 10px;
         padding: 10px 15px;
         border-radius: 20px;
         background: #5fb878;
         margin-bottom: 10px;
-        a{
-        color: #fff;
+        a {
+          color: #fff;
         }
       }
     }
   }
-  .table-box{
-    h3{
+  .table-box {
+    h3 {
       text-align: center;
       font-size: 24px;
       font-weight: 600;
       transition: all 1s initial 0;
       margin: 10px 0;
-      p{
+      p {
         display: inline-block;
         padding: 10px 30px;
         background: #5fb878;
@@ -595,5 +635,4 @@ footer {
       }
     }
   }
-
 }
