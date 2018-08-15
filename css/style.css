@@ -2,7 +2,7 @@
 /* CSS Document */
 * { margin: 0; padding: 0; }
 
-body { font-size: 12px; font-family: SimSun, Arial; position: relative; background: url(../images/2.jpg) s; }
+body { font-size: 12px; font-family: SimSun, Arial; position: relative; background: url(../images/banner.jpg) no-repeat center; }
 
 img { border: none; }
 
@@ -33,12 +33,12 @@ header .header .head-ul .head-ul-li { border-bottom: 3px solid #108938; height: 
 header .header .head-ul .head-ul-li a { color: #108938; }
 header .header .head-right-ul { text-align: center; float: left; }
 header .head-right-s { float: right; line-height: 80px; height: 80px; position: relative; }
+header .head-right-s:hover .head-right-s-content { display: block; }
 header .head-right-s a { font-size: 16px; color: #108938; margin-left: 30px; }
-header .head-right-s .head-right-s-content { line-height: 30px; position: absolute; background: #fff; z-index: 999999; min-width: 160px; left: -85px; box-sizing: border-box; padding: 10px; top: 80px; border-radius: 5px; text-overflow: ellipsis; white-space: nowrap; }
-header .head-right-s .head-right-s-content::after { width: 0; height: 0; border-width: 0 10px 15px; border-style: solid; border-color: transparent transparent #fff; margin: 40px auto; position: absolute; top: -55px; left: 50%; margin-left: -10px; border-radius: 2px; content: ''; }
+header .head-right-s .head-right-s-content { line-height: 30px; position: absolute; background: #fff; z-index: 999999; right: 0; box-sizing: border-box; padding: 10px; top: 80px; border-radius: 5px; text-overflow: ellipsis; white-space: nowrap; display: none; }
 header .head-right-s .head-right-s-content ul li { font-size: 14px; }
-header .head-right-s .head-right-s-content ul li:last-of-type { text-align: center; }
-header .head-right-s .head-right-s-content ul li:last-of-type a { margin-left: 0; }
+header .head-right-s .head-right-s-content ul li:last-of-type a { margin-left: 0; color: #333; font-size: 14px; }
+header .head-right-s .head-right-s-content ul li .layui-icon { padding: 5px; font-weight: 600; }
 header .head-right-s:hover { text-decoration: none; }
 
 .m-l-5 { margin-left: 5px; }
@@ -96,10 +96,28 @@ footer .foot { height: auto; overflow: hidden; width: 100%; }
 .content-box .layui-tab-card .ckk-xj .ai-title span { display: inline; padding: 5px; background: #eee; border-radius: 2px; }
 .content-box .layui-tab-card .ckk-xj .ai-title span .layui-icon { font-size: 12px !important; cursor: pointer; }
 .content-box .layui-tab-card .ckk-xj .ckk-xj-p { padding: 9px 0 9px 15px; }
-.content-box .layui-tab-card .ai-submit .layui-input-block { margin-left: 110px; }
+.content-box .layui-tab-card .ai-submit .layui-form-item .layui-input-inline { width: 300px; }
+.content-box .layui-tab-card .ai-submit .layui-form-label { text-align: left; padding: 9px 0 9px 15px; }
+.content-box .layui-tab-card .ai-submit .layui-input-block { position: relative; margin-left: 95px; }
+.content-box .layui-tab-card .ai-submit .layui-input-block .ai-submit-span { position: absolute; line-height: 28px; margin: 6px 10px 0 0; }
 .content-box .layui-tab-card .ai-submit p { font-size: 14px; line-height: 28px; color: #c2c2c2; }
 .content-box .layui-tab-card .ai-submit p:last-of-type { margin-bottom: 15px; }
 .content-box .layui-tab-card .pay-center .pay-box .zffs-img { height: 38px; float: left; }
+.content-box .layui-tab-card .pay-center .pay-center-tb1 { display: flex; justify-content: center; margin-bottom: 20px; }
+.content-box .layui-tab-card .pay-center .pay-center-tb1 span { display: inline-block; padding: 10px 30px; cursor: pointer; border: 1px solid #58596b; }
+.content-box .layui-tab-card .pay-center .pay-center-tb1 span:first-of-type { border-right: none; }
+.content-box .layui-tab-card .pay-center .pay-center-tb1 .check-this { background: #5fb878; color: #fff; border-color: #5fb878; }
+.content-box .layui-tab-card .pay-center .pay-center-tb2 { display: flex; justify-content: center; min-height: 400px; }
+.content-box .layui-tab-card .pay-center .pay-center-tb2 .pay-center-tb2-li { float: left; min-height: 350px; text-align: center; padding: 20px 30px; box-shadow: 0 6px 20px 0 rgba(41, 41, 41, 0.1); margin-right: 10px; }
+.content-box .layui-tab-card .pay-center .pay-center-tb2 .pay-center-tb2-li:hover { border: 1px solid #eb5648; box-shadow: 0 5px 20px 0 rgba(0, 0, 0, 0.1); transform: scale(1.03); }
+.content-box .layui-tab-card .pay-center .pay-center-tb2 .pay-center-tb2-li h3 { margin: .5em 0; font-size: 28px; font-weight: 600; font-family: "Microsoft YaHei", Serif !important; }
+.content-box .layui-tab-card .pay-center .pay-center-tb2 .pay-center-tb2-li .price { display: block; }
+.content-box .layui-tab-card .pay-center .pay-center-tb2 .pay-center-tb2-li .price span { font-size: 34px; }
+.content-box .layui-tab-card .pay-center .pay-center-tb2 .pay-center-tb2-li .price .sign { color: #9b9b9b; font-size: 16px; margin-left: -.75em; margin-right: .25em; color: #9b9b9b; font-weight: 400; vertical-align: 1.2em; }
+.content-box .layui-tab-card .pay-center .pay-center-tb2 .pay-center-tb2-li .switch { display: inline-block; margin-top: 20px; padding: 10px 20px; border: 1px solid #c5c5c5; margin-bottom: 10px; box-shadow: 0 1px 1px 0 rgba(153, 153, 153, 0.15), 0 2px 5px 0 rgba(153, 153, 153, 0.1); }
+.content-box .layui-tab-card .pay-center .pay-center-tb2 .pay-center-tb2-li .buy-now { border-color: #5fb878; background: #5fb878; color: #fff; }
+.content-box .layui-tab-card .pay-center .pay-center-tb2 .pay-center-tb2-li .collaborator { display: block; font-size: 14px; padding-bottom: 7px; border-bottom: 1px solid #c5c5c5; margin-bottom: 20px; }
+.content-box .layui-tab-card .pay-center .pay-center-tb2 .pay-center-tb2-li .child-ul li { line-height: 30px; }
 .content-box .layui-tab-card .popu-box .layui-input-inline { width: 300px; }
 .content-box .layui-tab-card .popu-box h2 { font-weight: 600; margin-bottom: 15px; }
 .content-box .layui-tab-card .popu-box p { line-height: 2; }

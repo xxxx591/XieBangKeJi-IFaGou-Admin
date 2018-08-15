@@ -12,7 +12,7 @@ body {
   font-size: 12px;
   font-family: SimSun, Arial;
   position: relative;
-  background: url(../images/2.jpg)s;
+  background: url(../images/banner.jpg)no-repeat center;
 }
 
 img {
@@ -117,6 +117,9 @@ header {
     line-height: 80px;
     height: 80px;
     position: relative;
+    &:hover .head-right-s-content {
+      display: block;
+    }
     a {
       font-size: 16px;
       color: #108938;
@@ -127,36 +130,27 @@ header {
       position: absolute;
       background: #fff;
       z-index: 999999;
-      min-width: 160px;
-      left: -85px;
+      right: 0;
       box-sizing: border-box;
       padding: 10px;
       top: 80px;
       border-radius: 5px;
       text-overflow: ellipsis;
       white-space: nowrap;
-      &::after {
-        width: 0;
-        height: 0;
-        border-width: 0 10px 15px;
-        border-style: solid;
-        border-color: transparent transparent #fff;
-        margin: 40px auto;
-        position: absolute;
-        top: -55px;
-        left: 50%;
-        margin-left: -10px;
-        border-radius: 2px;
-        content: '';
-      }
+      display: none;
       ul {
         li {
           font-size: 14px;
           &:last-of-type {
-            text-align: center;
-            a{
-            margin-left: 0;
+            a {
+              margin-left: 0;
+              color: #333;
+              font-size: 14px;
             }
+          }
+          .layui-icon {
+            padding: 5px;
+            font-weight: 600;
           }
         }
       }
@@ -417,8 +411,23 @@ footer {
       }
     } // 提交软文页面
     .ai-submit {
+      .layui-form-item {
+        .layui-input-inline {
+          width: 300px;
+        }
+      }
+      .layui-form-label {
+        text-align: left;
+        padding: 9px 0 9px 15px;
+      }
       .layui-input-block {
-        margin-left: 110px;
+        position: relative;
+        margin-left: 95px;
+        .ai-submit-span {
+          position: absolute;
+          line-height: 28px;
+          margin: 6px 10px 0 0;
+        }
       }
       p {
         font-size: 14px;
@@ -434,6 +443,90 @@ footer {
         .zffs-img {
           height: 38px;
           float: left;
+        }
+      }
+      .pay-center-tb1{
+        display: flex;
+        justify-content: center;
+        margin-bottom: 20px;
+        span{
+          display: inline-block;
+          padding: 10px 30px;
+          cursor: pointer;
+          border: 1px solid #58596b;
+          &:first-of-type{
+            border-right: none;
+          }
+        }
+        .check-this{
+          background: #5fb878;
+          color: #fff;
+          border-color: #5fb878;
+        }
+      }
+      .pay-center-tb2 {
+        display: flex;
+        justify-content: center;
+        min-height: 400px;
+        .pay-center-tb2-li {
+          float: left;
+          min-height: 350px;
+          text-align: center;
+          padding: 20px 30px;
+          box-shadow: 0 6px 20px 0 rgba(41, 41, 41, 0.1);
+          margin-right: 10px;
+          &:hover {
+            border: 1px solid #eb5648;
+            box-shadow: 0 5px 20px 0 rgba(0, 0, 0, 0.1);
+            transform: scale(1.03);
+            
+          }
+          h3 {
+            margin: .5em 0;
+            font-size: 28px;
+            font-weight: 600;
+            font-family: "Microsoft YaHei", Serif !important;
+          }
+          .price {
+            display: block;
+            span {
+              font-size: 34px;
+            }
+            .sign {
+              color: #9b9b9b;
+              font-size: 16px;
+              margin-left: -.75em;
+              margin-right: .25em;
+              color: #9b9b9b;
+              font-weight: 400;
+              vertical-align: 1.2em;
+            }
+          }
+          .switch {
+            display: inline-block;
+            margin-top: 20px;
+            padding: 10px 20px;
+            border: 1px solid #c5c5c5;
+            margin-bottom: 10px;
+            box-shadow: 0 1px 1px 0 hsla(0, 0%, 60%, .15), 0 2px 5px 0 hsla(0, 0%, 60%, .1);
+          }
+          .buy-now{
+            border-color: #5fb878;
+            background: #5fb878;
+            color: #fff;
+          }
+          .collaborator {
+            display: block;
+            font-size: 14px;
+            padding-bottom: 7px;
+            border-bottom: 1px solid #c5c5c5;
+            margin-bottom: 20px;
+          }
+          .child-ul {
+            li {
+              line-height: 30px;
+            }
+          }
         }
       }
     } // 推广中心
