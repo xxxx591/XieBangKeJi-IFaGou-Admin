@@ -442,7 +442,6 @@ footer {
       .pay-box {
         .zffs-img {
           height: 38px;
-<<<<<<< HEAD
         }
         .pay-card-img {
           height: 76px;
@@ -453,33 +452,15 @@ footer {
         justify-content: center;
         margin-bottom: 20px;
         span {
-=======
-          float: left;
-        }
-      }
-      .pay-center-tb1{
-        display: flex;
-        justify-content: center;
-        margin-bottom: 20px;
-        span{
->>>>>>> fe13283a20ed4e4ab1365047f82b2bd6cbb29268
           display: inline-block;
           padding: 10px 30px;
           cursor: pointer;
           border: 1px solid #58596b;
-<<<<<<< HEAD
           &:first-of-type {
             border-right: none;
           }
         }
         .check-this {
-=======
-          &:first-of-type{
-            border-right: none;
-          }
-        }
-        .check-this{
->>>>>>> fe13283a20ed4e4ab1365047f82b2bd6cbb29268
           background: #5fb878;
           color: #fff;
           border-color: #5fb878;
@@ -500,10 +481,6 @@ footer {
             border: 1px solid #eb5648;
             box-shadow: 0 5px 20px 0 rgba(0, 0, 0, 0.1);
             transform: scale(1.03);
-<<<<<<< HEAD
-=======
-            
->>>>>>> fe13283a20ed4e4ab1365047f82b2bd6cbb29268
           }
           h3 {
             margin: .5em 0;
@@ -534,11 +511,7 @@ footer {
             margin-bottom: 10px;
             box-shadow: 0 1px 1px 0 hsla(0, 0%, 60%, .15), 0 2px 5px 0 hsla(0, 0%, 60%, .1);
           }
-<<<<<<< HEAD
           .buy-now {
-=======
-          .buy-now{
->>>>>>> fe13283a20ed4e4ab1365047f82b2bd6cbb29268
             border-color: #5fb878;
             background: #5fb878;
             color: #fff;
@@ -557,7 +530,6 @@ footer {
           }
         }
       }
-<<<<<<< HEAD
     }
     .pay-info-box {
       display: flex;
@@ -644,8 +616,6 @@ footer {
           margin-left: -100px;
         }
       }
-=======
->>>>>>> fe13283a20ed4e4ab1365047f82b2bd6cbb29268
     } // 推广中心
     .popu-box {
       .layui-input-inline {
