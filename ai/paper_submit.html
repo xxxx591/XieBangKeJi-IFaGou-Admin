@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<link rel="stylesheet" href="./../layui/css/layui.css">
+<link rel="stylesheet" href="./../css/style.css">
+
+<body>
+    <header>
+        <div class="header">
+            <div class="head-right">
+                <a href="/" class="logo">
+                    <img src="./../images/logo.png" title="">
+                </a>
+                <ul class="head-ul head-right-ul">
+                    <li>
+                        <a href="/">素材推荐</a>
+                    </li>
+                    <li class="head-ul-li">
+                        <a href="./paper_submit.html">AI伪原创</a>
+                    </li>
+                    <li>
+                        <a href="../similarity/simi_submit.html">相似检测</a>
+                    </li>
+                    <li>
+                        <a href="../useradmin/user-info.html">账号管理</a>
+                    </li>
+                    <li>
+                        <a href="../paycenter/user-info.html">充值中心</a>
+                    </li>
+                    <li>
+                        <a href="../popu/popu-index.html">推广赚分</a>
+                    </li>
+                    <li>
+                        <a href="../free/index.html">免费活动</a>
+                    </li>
+                    <li>
+                        <a href="/">SEO工具</a>
+                    </li>
+                </ul>
+                <span class="head-right-s ">
+                    <img src="./../images/tx.jpg" alt="" style="cursor: pointer;">
+                </span>
+            </div>
+        </div>
+    </header>
+
+    <div class="content-box">
+        <div class="layui-tab layui-tab-card">
+            <ul class="layui-tab-title">
+                <li class="layui-this">
+                    <a href="./paper_submit.html">提交软文</a>
+                </li>
+                <li>
+                    <a href="./paper_result.html">原创结果</a>
+                </li>
+                <li>
+                    <a href="./paper_word.html">个人词库</a>
+                </li>
+            </ul>
+            <div class="layui-tab-content layui-form ai-submit">
+                <div class="layui-tab-item layui-show">
+                    <div class="layui-form-item">
+                        <label class="layui-form-label">软文标题：</label>
+                        <div class="layui-input-inline">
+                            <input type="text" name="title" placeholder="请输入标题" class="layui-input tip-ipt">
+                        </div>
+                    </div>
+                </div>
+                <div class="layui-form-item layui-form-text">
+                    <label class="layui-form-label">软文内容：</label>
+                    <div class="layui-input-block">
+                        <textarea name="desc" placeholder="请输入内容" class="layui-textarea"></textarea>
+                    </div>
+                </div>
+                <div class="layui-form-item">
+                    <label class="layui-form-label">单选框</label>
+                    <div class="layui-input-block">
+                        <input type="radio" name="sex" value="基础伪原创" title="基础伪原创">
+                        <span class="ai-submit-span">基础伪原创：系统对软文分词之后进行同义词替换，实现基础伪原创，此功能不计积分。</span>
+                    </div>
+                    <div class="layui-input-block">
+                        <input type="radio" name="sex" value="智能伪原创" title="智能伪原创" checked>
+                        <span class="ai-submit-span">智能伪原创：系统对软文全文进行语义分析后，实现智能伪原创。每篇10积分。</span>
+                    </div>
+                </div>
+                <div class="layui-form-item m-l-15">
+                    <button class="layui-btn layui-bg-gray">立即提交</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer class="foot">
+        <div class="foots">
+            <div class="footer">
+                <div class="footer-top">
+                    <a href="#">返回首页</a>
+                    <span>|</span>
+                    <a href="#">常见问题</a>
+                    <span>|</span>
+                    <a href="#">操作流程</a>
+                    <span>|</span>
+                    <a href="#">网站公告</a>
+                </div>
+                <div class="footer-bt">
+                    Copyright @ 2002-2016 湖南写邦科技有限公司
+                    <a href="#" target="_blank">湘ICP备16012700号-1</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+</body>
+
+<script src="./../js/jquery.min.js"></script>
+<script src="./../layui/layui.all.js"></script>
+<script>
+    //Demo
+    layui.use('form', function () {
+        var form = layui.form;
+        var layer = layui.layer;
+        var laydate = layui.laydate;
+        laydate.render({
+            elem: '#time1',
+        });
+        laydate.render({
+            elem: '#time2',
+        });
+        laydate.render({
+            elem: '#time3',
+            type: 'time',
+            range: true
+        });
+
+
+    });
+    var docHeight = $(document).innerHeight();
+    $('.content-box').css('min-height', docHeight - 230)
+    $('.content-box .layui-tab-content').css('min-height', docHeight - 400)
+    $('.ckk-edit').click(function (e) {
+        $('.ckk-add,.ckk-add-ipt').toggle();
+    });
+</script>
+
+</html>

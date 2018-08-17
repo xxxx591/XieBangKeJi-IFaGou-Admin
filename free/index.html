@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<link rel="stylesheet" href="./../layui/css/layui.css">
+<link rel="stylesheet" href="./../css/style.css">
+
+<body>
+    <header>
+        <div class="header">
+            <div class="head-right">
+                <a href="/" class="logo">
+                    <img src="./../images/logo.png" title="">
+                </a>
+                <ul class="head-ul head-right-ul">
+                    <li>
+                        <a href="/">素材推荐</a>
+                    </li>
+                    <li>
+                        <a href="../ai/paper_submit.html">AI伪原创</a>
+                    </li>
+                    <li>
+                        <a href="../ai/paper_submit.html">相似检测</a>
+                    </li>
+                    <li>
+                        <a href="../useradmin/user-info.html">账号管理</a>
+                    </li>
+                    <li>
+                        <a href="../paycenter/user-info.html">充值中心</a>
+                    </li>
+                    <li>
+                        <a href="../popu/popu-index.html">推广赚分</a>
+                    </li>
+                    <li class="head-ul-li">
+                        <a href="./index.html">免费活动</a>
+                    </li>
+                    <li>
+                        <a href="/">SEO工具</a>
+                    </li>
+                </ul>
+                <span class="head-right-s ">
+                    <img src="./../images/tx.jpg" alt="" style="cursor: pointer;">
+                </span>
+            </div>
+        </div>
+    </header>
+
+    <div class="content-box">
+        <div class="layui-tab layui-tab-card">
+            <ul class="layui-tab-title">
+                <li class="layui-this">
+                    <a href="./index.html">免费活动</a>
+                </li>
+            </ul>
+            <div class="layui-tab-content layui-form free-box">
+                <div class="top-box">
+                    <div class="top1">
+                        <span class="free">免费</span>
+                        <p>123积分</p>
+                        <div style="text-align: center;">
+                            <div class="wechat-line">
+                                <span>分享微信朋友圈</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="top2">
+                        <ul>
+                            <li>
+                                <span class="title">活动时间</span>
+                                <span class="content">长期有效</span>
+                            </li>
+                            <li>
+                                <span class="title">参与次数</span>
+                                <span class="content">每个账号仅支持参加一次</span>
+                            </li>
+                            <li>
+                                <span class="title">发放方式</span>
+                                <span class="content">积分自动充入该账户余额内</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <hr class="layui-bg-gray" style="background-color: #eee!important;">
+                <div class="bottom-box">
+                    <div class="bottom1">
+                        <img src="../images/ewm404.jpg" alt="">
+                    </div>
+                    <div class="bottom2">
+                        <p>扫描左侧二维码，填写手机号并分享到微信朋友圈，账户即可自动获取免费字数</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer class="foot">
+        <div class="foots">
+            <div class="footer">
+                <div class="footer-top">
+                    <a href="#">返回首页</a>
+                    <span>|</span>
+                    <a href="#">常见问题</a>
+                    <span>|</span>
+                    <a href="#">操作流程</a>
+                    <span>|</span>
+                    <a href="#">网站公告</a>
+                </div>
+                <div class="footer-bt">
+                    Copyright @ 2002-2016 湖南写邦科技有限公司
+                    <a href="#" target="_blank">湘ICP备16012700号-1</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+</body>
+
+<script src="./../js/jquery.min.js"></script>
+<script src="./../layui/layui.all.js"></script>
+<script>
+    //Demo
+    layui.use('form', function () {
+        var form = layui.form;
+        var layer = layui.layer;
+        var laydate = layui.laydate;
+        laydate.render({
+            elem: '#time1',
+        });
+        laydate.render({
+            elem: '#time2',
+        });
+        laydate.render({
+            elem: '#time3',
+            type: 'time',
+            range: true
+        });
+
+
+    });
+    var docHeight = $(document).innerHeight();
+    $('.content-box').css('min-height', docHeight - 230)
+    $('.content-box .layui-tab-content').css('min-height', docHeight - 400)
+    $('.ckk-edit').click(function (e) {
+        $('.ckk-add,.ckk-add-ipt').toggle();
+    });
+    $('.tip-ipt').on('change', function () {
+        var str = $(this).val().split('，')
+        console.log(str);
+        $('.ckk-xj-title').empty('span').html('您输入的标签是：')
+        str.forEach(function (item) {
+            $('.ckk-xj-title').append(`<span class="m-r-15">${item}</span>`)
+        })
+
+    });
+</script>
+
+</html>

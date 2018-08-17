@@ -1,0 +1,203 @@
+    <!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<link rel="stylesheet" href="./../layui/css/layui.css">
+<link rel="stylesheet" href="./../css/style.css">
+
+<body>
+    <header>
+        <div class="header">
+            <div class="head-right">
+                <a href="/" class="logo">
+                    <img src="./../images/logo.png" title="">
+                </a>
+                <ul class="head-ul head-right-ul">
+                    <li class="head-ul-li">
+                        <a href="/">素材推荐</a>
+                    </li>
+                    <li>
+                        <a href="../ai/paper_submit.html">AI伪原创</a>
+                    </li>
+                    <li>
+                        <a href="../ai/paper_submit.html">相似检测</a>
+                    </li>
+                    <li>
+                        <a href="../useradmin/user-info.html">账号管理</a>
+                    </li>
+                    <li>
+                        <a href="../paycenter/user-info.html">充值中心</a>
+                    </li>
+                    <li>
+                        <a href="../popu/popu-index.html">推广赚分</a>
+                    </li>
+                    <li>
+                        <a href="../free/index.html">免费活动</a>
+                    </li>
+                    <li>
+                        <a href="/">SEO工具</a>
+                    </li>
+                </ul>
+                <span class="head-right-s ">
+                    <img src="./../images/tx.jpg" alt="" style="cursor: pointer;">
+                </span>
+            </div>
+        </div>
+    </header>
+
+    <div class="content-box">
+        <div class="layui-tab layui-tab-card">
+            <ul class="layui-tab-title">
+                <li>
+                    <a href="/">查找素材</a>
+                </li>
+                <li class="layui-this">
+                    <a href="./recom_result.html">推荐结果</a>
+                </li>
+                <li>
+                    <a href="./my_reference.html">我的参考库</a>
+                </li>
+                <li>
+                    <a href="./creat_reference.html">新建参考库</a>
+                </li>
+                <li>
+                    <a href="./creat_webs.html">新增网站源</a>
+                </li>
+            </ul>
+            <div class="layui-tab-content layui-form">
+                <table class="layui-table">
+                    <colgroup>
+                        <col width="150">
+                        <col width="200">
+                        <col>
+                    </colgroup>
+                    <thead>
+                        <tr>
+                            <th>关键词</th>
+                            <th>参考库</th>
+                            <th>状态</th>
+                            <th>提交时间</th>
+                            <th>最近更新</th>
+                            <th>操作</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>论文</td>
+                            <td>论文检测，论文查重，论文修改</td>
+                            <td>已完成</td>
+                            <td>2018年8月6日17:18:13</td>
+                            <td>2018年8月6日19:19:05</td>
+                            
+                            <td>
+                                <a href="javascript:;">查看</a>
+                                <span>｜</span>
+                                <a href="javascript:;" data-method="offset" id="setting">设置</a>
+                                <span>｜</span>
+                                <a href="javascript:;">删除</a>
+                            </td>
+                        </tr>
+
+                    </tbody>
+                </table>
+
+            </div>
+        </div>
+    </div>
+    <footer class="foot">
+        <div class="foots">
+            <div class="footer">
+                <div class="footer-top">
+                    <a href="#">返回首页</a>
+                    <span>|</span>
+                    <a href="#">常见问题</a>
+                    <span>|</span>
+                    <a href="#">操作流程</a>
+                    <span>|</span>
+                    <a href="#">网站公告</a>
+                </div>
+                <div class="footer-bt">
+                    Copyright @ 2002-2016 湖南写邦科技有限公司
+                    <a href="#" target="_blank">湘ICP备16012700号-1</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <div id="box1">
+        <div class="ceng"></div>
+        <div class="layui-form">
+            <h3>更新计划
+                <span class="layui-icon layui-icon-close m-r-10"></span>
+            </h3>
+            <div class="layui-form-item">
+                <label class="layui-form-label">开始时间</label>
+                <div class="layui-input-block">
+                    <input type="text" class="layui-input" id="time1" placeholder="yyyy-mm-dd">
+                </div>
+            </div>
+            <div class="layui-form-item">
+                <label class="layui-form-label">结束时间</label>
+                <div class="layui-input-block">
+                    <input type="text" class="layui-input" id="time2" placeholder="yyyy-mm-dd">
+                </div>
+            </div>
+            <div class="layui-form-item">
+                <label class="layui-form-label">结束时间</label>
+                <div class="layui-input-block">
+                    <input type="text" class="layui-input" id="time3" placeholder="-">
+                </div>
+            </div>
+            <div class="layui-form-item">
+                <label class="layui-form-label">开关</label>
+                <div class="layui-input-block">
+                    <input type="checkbox" name="switch" lay-skin="switch" lay-text="开启|关闭">
+                </div>
+            </div>
+            <div class="layui-form-item">
+                <button class="layui-btn layui-bg-gray">提交</button>
+                <button class="layui-btn layui-btn-primary cancel">取消</button>
+            </div>
+        </div>
+    </div>
+
+</body>
+
+<script src="./../js/jquery.min.js"></script>
+<script src="./../layui/layui.all.js"></script>
+<script>
+    //Demo
+    layui.use('form', function () {
+        var form = layui.form;
+        var layer = layui.layer;
+        var laydate = layui.laydate;
+        laydate.render({
+            elem: '#time1',
+        });
+        laydate.render({
+            elem: '#time2',
+        });
+        laydate.render({
+            elem: '#time3',
+            type: 'time',
+            range: true
+        });
+
+
+    });
+    var docHeight = $(document).innerHeight();
+    $('.content-box').css('min-height', docHeight - 230)
+    $('.content-box .layui-tab-content').css('min-height', docHeight - 400)
+    $('#setting').click(function (e) {
+        $('#box1').toggle();
+    });
+    $('#box1 .ceng,#box1 h3 span,#box1 .cancel').on('click', function () {
+        $('#box1').toggle();
+    });
+</script>
+
+</html>

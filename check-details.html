@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<link rel="stylesheet" href="./layui/css/layui.css">
+<link rel="stylesheet" href="./css/style.css">
+
+<body>
+    <div class="header-box">
+        <h3>这就是我的搜索标题</h3>
+        <h4>2018年8月13日10:18:02</h4>
+    </div>
+    <div class="check-details-box">
+
+        <div class="tip-box">
+            <p>名字：
+            </p>
+            <ul>
+                <li>
+                    <a href="">全部(124)</a>
+                </li>
+                <li>
+                    <a href="">已查看</a>
+                </li>
+                <li>
+                    <a href="">未查看</a>
+                </li>
+                <li>
+                    <a href="">新更新</a>
+                </li>
+                
+            </ul>
+            <p>来源：
+            </p>
+            <ul>
+                <li>
+                    <a href="">全部(124)</a>
+                </li>
+                <li>
+                    <a href="">新浪</a>
+                </li>
+                <li>
+                    <a href="">头条</a>
+                </li>
+                <li>
+                    <a href="">天天快报</a>
+                </li>
+                <li>
+                    <a href="">微信朋友圈</a>
+                </li>
+            </ul>
+        </div>
+        <div class="table-box">
+            <h3>
+                <p>最后更新时间：2018年8月13日11:30:04</p>
+            </h3>
+            <div class="layui-tab-content layui-form">
+                <table class="layui-table">
+                    <colgroup>
+
+                    </colgroup>
+                    <thead>
+                        <tr>
+                            <th>状态</th>
+                            <th>来源</th>
+                            <th>标题</th>
+                            <th>发现时间</th>
+                            <th>操作</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>以查看</td>
+                            <td>
+                                <a href="javascript:;">搜狐公众号</a>
+                            </td>
+                            <td>论毕业论文的好坏以及需要使用啥样式的查重软件</td>
+                            <td>2018年8月6日19:19:05</td>
+                            <td>
+                                <a href="javascript:;">查看</a>
+                                <span>｜</span>
+                                <a href="javascript:;">删除</a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>未查看</td>
+                            <td>
+                                <a href="javascript:;">搜狐公众号</a>
+                            </td>
+                            <td>大家好我是论文标题</td>
+                            <td>2018年8月6日19:19:05</td>
+                            <td>
+                                <a href="javascript:;">查看</a>
+                                <span>｜</span>
+                                <a href="javascript:;">删除</a>
+                            </td>
+                        </tr>
+
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+</body>
+<script src="./js/jquery.min.js"></script>
+<script src="/layui/layui.js"></script>
+<script>
+    //Demo
+    layui.use('form', function () {
+        var form = layui.form;
+
+    });
+    setTimeout(function () {
+        $('.table-box h3').remove();
+    }, 3000);
+</script>
+
+</html>

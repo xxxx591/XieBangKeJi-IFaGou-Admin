@@ -1,0 +1,16 @@
+.content-box .layui-tab-card .pay-center .pay-center-tb1 { display: flex; justify-content: center; margin-bottom: 20px; }
+.content-box .layui-tab-card .pay-center .pay-center-tb1 span { display: inline-block; padding: 10px 30px; cursor: pointer; border: 1px solid #58596b; }
+.content-box .layui-tab-card .pay-center .pay-center-tb1 span:first-of-type { border-right: none; }
+.content-box .layui-tab-card .pay-center .pay-center-tb1 .check-this { background: #5fb878; color: #fff; border-color: #5fb878; }
+.content-box .layui-tab-card .pay-center .pay-center-tb2 { display: flex; justify-content: center; min-height: 400px; }
+.content-box .layui-tab-card .pay-center .pay-center-tb2 .pay-center-tb2-li { float: left; min-height: 350px; text-align: center; padding: 20px 30px; box-shadow: 0 6px 20px 0 rgba(41, 41, 41, 0.1); margin-right: 10px; }
+.content-box .layui-tab-card .pay-center .pay-center-tb2 .pay-center-tb2-li:hover { border: 1px solid #eb5648; box-shadow: 0 5px 20px 0 rgba(0, 0, 0, 0.1); transform: scale(1.03); }
+.content-box .layui-tab-card .pay-center .pay-center-tb2 .pay-center-tb2-li h3 { margin: .5em 0; font-size: 28px; font-weight: 600; font-family: "Microsoft YaHei", Serif !important; }
+.content-box .layui-tab-card .pay-center .pay-center-tb2 .pay-center-tb2-li .price { display: block; }
+.content-box .layui-tab-card .pay-center .pay-center-tb2 .pay-center-tb2-li .price span { font-size: 34px; }
+.content-box .layui-tab-card .pay-center .pay-center-tb2 .pay-center-tb2-li .price .sign { color: #9b9b9b; font-size: 16px; margin-left: -.75em; margin-right: .25em; color: #9b9b9b; font-weight: 400; vertical-align: 1.2em; }
+.content-box .layui-tab-card .pay-center .pay-center-tb2 .pay-center-tb2-li .switch { display: inline-block; margin-top: 20px; padding: 10px 20px; border: 1px solid #c5c5c5; margin-bottom: 10px; box-shadow: 0 1px 1px 0 rgba(153, 153, 153, 0.15), 0 2px 5px 0 rgba(153, 153, 153, 0.1); }
+.content-box .layui-tab-card .pay-center .pay-center-tb2 .pay-center-tb2-li .buy-now { border-color: #5fb878; background: #5fb878; color: #fff; }
+.content-box .layui-tab-card .pay-center .pay-center-tb2 .pay-center-tb2-li .collaborator { display: block; font-size: 14px; padding-bottom: 7px; border-bottom: 1px solid #c5c5c5; margin-bottom: 20px; }
+.content-box .layui-tab-card .pay-center .pay-center-tb2 .pay-center-tb2-li .child-ul li { line-height: 30px; }
+

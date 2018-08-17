@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<link rel="stylesheet" href="./layui/css/layui.css">
+<link rel="stylesheet" href="./css/style.css">
+
+<body>
+    <header>
+        <div class="header">
+            <div class="head-right">
+                <a href="/" class="logo">
+                    <img src="images/logo.png" title="">
+                </a>
+                <ul class="head-ul head-right-ul">
+                    <li class="head-ul-li">
+                        <a href="/">素材推荐</a>
+                    </li>
+                    <li>
+                        <a href="./ai/paper_submit.html">AI伪原创</a>
+                    </li>
+                    <li>
+                        <a href="./similarity/simi_submit.html">相似检测</a>
+                    </li>
+                    <li>
+                        <a href="./useradmin/user-info.html">账号管理</a>
+                    </li>
+                    <li>
+                        <a href="./paycenter/user-info.html">充值中心</a>
+                    </li>
+                    <li>
+                        <a href="./popu/popu-index.html">推广赚分</a>
+                    </li>
+                    <li>
+                        <a href="./free/index.html">免费活动</a>
+                    </li>
+                    <li>
+                        <a href="/">SEO工具</a>
+                    </li>
+                </ul>
+                <span class="head-right-s ">
+                    <img src="./images/tx.jpg" alt="" style="cursor: pointer;">
+                    <div class="head-right-s-content layui-anim layui-anim-upbit">
+                        <ul>
+                            <li><i class="layui-icon layui-icon-user"></i>用户名称：<span>明天10012312318</span></li>
+                            <li><i class="layui-icon layui-icon-rmb"></i>用户余额：<span>1008字</span></li>
+                            <li><i class="layui-icon layui-icon-return"></i><a href="javascript:;">退出登录</a></li>
+                        </ul>
+                    </div>
+                </span>
+            </div>
+        </div>
+    </header>
+
+    <div class="content-box">
+        <div class="layui-tab layui-tab-card">
+            <ul class="layui-tab-title">
+                <li class="layui-this">
+                    <a href="/">查找素材</a>
+                </li>
+                <li>
+                    <a href="./recommend/recom_result.html">推荐结果</a>
+                </li>
+                <li>
+                    <a href="./recommend/my_reference.html">我的参考库</a>
+                </li>
+                <li>
+                    <a href="./recommend/creat_reference.html">新建参考库</a>
+                </li>
+                <li>
+                    <a href="./recommend/creat_webs.html">新增网站源</a>
+                </li>
+            </ul>
+            <div class="layui-tab-content layui-form czsc-form">
+                <div class="layui-tab-item layui-show">
+                    <div class="layui-form-item">
+                        <label class="layui-form-label">输入关键词</label>
+                        <div class="layui-input-inline">
+                            <input type="text" name="title" placeholder="请输入标题" class="layui-input">
+                        </div>
+                    </div>
+
+                    <div class="layui-form-item">
+                        <span class="layui-inline m-l-20">
+                            <button class="layui-btn layui-bg-gray">新建参考库</button>
+                        </span>
+                        <label class="layui-form-label">选择参考库</label>
+                        <div class="layui-input-inline">
+                            <select name="city" lay-verify="required">
+                                <option value=""></option>
+                                <option value="0">论文</option>
+                                <option value="1">教育</option>
+                                <option value="2">检测</option>
+                                <option value="3">游戏</option>
+                                <option value="4">湖南写邦</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="layui-form-item m-l-15">
+                        <p>需消耗积分：
+                            <span>25</span> 积分</p>
+                    </div>
+                    <div class="layui-form-item m-l-15 ckk-check-index">
+                        <h4>参考库地址列表：</h4>
+                        <ul>
+                            <li><a href="javascript:;">综合来源</a></li>
+                            <li><a href="javascript:;">搜狐</a></li>
+                            <li><a href="javascript:;">新浪</a></li>
+                        </ul>
+                    </div>
+                    <div class="layui-form-item m-l-15">
+                        <button class="layui-btn layui-bg-gray">立即提交</button>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <footer class="foot">
+        <div class="foots">
+            <div class="footer">
+                <div class="footer-top">
+                    <a href="#">返回首页</a>
+                    <span>|</span>
+                    <a href="#">常见问题</a>
+                    <span>|</span>
+                    <a href="#">操作流程</a>
+                    <span>|</span>
+                    <a href="#">网站公告</a>
+                </div>
+                <div class="footer-bt">
+                    Copyright @ 2002-2016 湖南写邦科技有限公司
+                    <a href="#" target="_blank">湘ICP备16012700号-1</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+<script src="./js/jquery.min.js"></script>
+<script src="/layui/layui.js"></script>
+<script>
+    //Demo
+    layui.use('form', function () {
+        var form = layui.form;
+
+    });
+    var docHeight = $(document).innerHeight();
+    $('.content-box').css('min-height', docHeight - 230)
+    $('.content-box .layui-tab-content').css('min-height', docHeight - 400)
+</script>
+
+</html>
