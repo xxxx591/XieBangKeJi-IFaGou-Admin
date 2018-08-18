@@ -310,6 +310,78 @@ footer {
   }
 }
 
+#box2 {
+  display: none;
+  .ceng {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    background: rgba(0, 0, 0, 0.3);
+    z-index: 9998;
+  }
+  .layui-form {
+    position: absolute;
+    background: #fff;
+    border-radius: 3px;
+    padding: 0 20px 20px;
+    left: 50%;
+    top: 50%;
+    width: 450px;
+    margin-left: -225px;
+    margin-top: -165px;
+    z-index: 99999;
+    h3 {
+      line-height: 42px;
+      padding-bottom: 10px;
+      border-bottom: 1px solid $backColor;
+      margin-bottom: 15px;
+      span {
+        float: right;
+        cursor: pointer;
+      }
+    }
+    .layui-form-label {
+      text-align: left;
+      padding: 9px 0 9px 15px;
+    }
+    .layui-form-item {
+      &:last-of-type {
+        margin-top: 10px;
+        padding-top: 15px;
+      }
+    }
+    .layui-bg-gray {
+      background-color: #5fb878 !important;
+      color: #f8f8f8 !important;
+    }
+    .pay-center-info2 {
+      width: 450px;
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      button {
+        margin-top: 20px;
+      }
+      .zffs-img {
+        margin-right: 20px;
+        height: 38px;
+      }
+      .llayui-form-radio {
+        float: left;
+      }
+    }
+    .pay-img-box {
+      text-align: center;
+      margin: 20px;
+      .pay-img {
+        height: 164px;
+      }
+    }
+  }
+}
+
 // ----------------centent---------------
 .content-box {
   box-sizing: border-box;
@@ -534,10 +606,10 @@ footer {
     .pay-info-box {
       display: flex;
       justify-content: flex-start;
-      .pay-box-title{
-       font-size: 14px;
-       font-weight: 600;
-       padding: 10px 0 ; 
+      .pay-box-title {
+        font-size: 14px;
+        font-weight: 600;
+        padding: 10px 0;
       }
       .pay-left {
         width: 66%;

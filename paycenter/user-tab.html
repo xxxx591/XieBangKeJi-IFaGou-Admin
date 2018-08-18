@@ -95,7 +95,9 @@
                         <span class="price">
                             <span class="sign">¥</span>
                             <span>
-                                <span class="price-span">30</span>元/<span class="price-month">月</span></span>
+                                <span class="price-span">30</span>元/
+                                <span class="price-month">月</span>
+                            </span>
                         </span>
                         <a href="javascript:;" class="switch buy-now">立即购买</a>
                         <div class="layui-clear"></div>
@@ -116,7 +118,9 @@
                         <span class="price">
                             <span class="sign">¥</span>
                             <span>
-                                <span class="price-span">100</span>元/<span class="price-month">月</span></span>
+                                <span class="price-span">100</span>元/
+                                <span class="price-month">月</span>
+                            </span>
                         </span>
                         <a href="javascript:;" class="switch buy-now">立即购买</a>
                         <div class="layui-clear"></div>
@@ -137,7 +141,9 @@
                         <span class="price">
                             <span class="sign">¥</span>
                             <span>
-                                <span class="price-span">500</span>元/<span class="price-month">月</span></span>
+                                <span class="price-span">500</span>元/
+                                <span class="price-month">月</span>
+                            </span>
                         </span>
                         <a href="javascript:;" class="switch buy-now">立即购买</a>
                         <div class="layui-clear"></div>
@@ -175,7 +181,29 @@
             </div>
         </div>
     </footer>
+    <div id="box2">
+        <div class="ceng"></div>
+        <div class="layui-form">
+            <h3>请选择支付方式
+                <span class="layui-icon layui-icon-close m-r-10"></span>
+            </h3>
+            <div class="layui-input-inline pay-center-info2">
+                <input type="radio" name="sex" value="" title="" checked>
+                <img src="../images/wxzf.png" alt="" class="zffs-img">
+                <input type="radio" name="sex" value="" title="">
+                <img src="../images/zfb.png" alt="" class="zffs-img">
+            </div>
+            <div class="layui-form-item">
+                <p style="margin-top: 20px;">您当前选择的套餐是：
+                    <span style="color: red">半年VIP</span>
+                </p>
+            </div>
+            <div class="layui-form-item pay-img-box">
+                <img src="../images/ewm404.jpg" alt="" class="pay-img">
+            </div>
 
+        </div>
+    </div>
 </body>
 
 <script src="./../js/jquery.min.js"></script>
@@ -212,6 +240,10 @@
             })
         }
 
+    });
+    
+    $('.buy-now,#box2 .ceng,#box2 h3 span').on('click', function () {
+        $('#box2').toggle();
     });
 </script>
 
