@@ -164,7 +164,8 @@ footer .foot { height: auto; overflow: hidden; width: 100%; }
 .content-box .layui-tab-card .free-box .top-box .top1 p { text-align: center; font-size: 50px; color: #108938; margin: 10px 0; font-family: "Adobe Heiti Std"; }
 .content-box .layui-tab-card .free-box .top-box .top1 .wechat-line { width: 60%; height: 15px; line-height: 25px; position: relative; border-bottom: 1px solid #58596b; margin: 0 auto; }
 .content-box .layui-tab-card .free-box .top-box .top1 .wechat-line span { padding: 0 12px; font-size: 14px; color: #363b3c; display: block; position: absolute; top: 0; left: 50%; margin-left: -61px; background-color: #fff; }
-.content-box .layui-tab-card .free-box .top-box .top2 { flex-grow: 3; }
+.content-box .layui-tab-card .free-box .top-box .top2 { flex-grow: 3; position: relative; }
+.content-box .layui-tab-card .free-box .top-box .top2 .free-img { height: 100px; position: absolute; right: 0; top: 0; }
 .content-box .layui-tab-card .free-box .top-box .top2 ul li { font-size: 16px; font-family: "Adobe Heiti Std"; margin-bottom: 15px; }
 .content-box .layui-tab-card .free-box .top-box .top2 ul li:first-of-type { margin-top: 30px; }
 .content-box .layui-tab-card .free-box .top-box .top2 ul li .title { color: #c2c2c2; margin-right: 30px; }
